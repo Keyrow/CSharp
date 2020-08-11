@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\bin\Debug\netcoreapp2.2\DeckOfCards.deps.json
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\bin\Debug\netcoreapp2.2\DeckOfCards.runtimeconfig.json
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\bin\Debug\netcoreapp2.2\DeckOfCards.runtimeconfig.dev.json
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\bin\Debug\netcoreapp2.2\DeckOfCards.dll
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\bin\Debug\netcoreapp2.2\DeckOfCards.pdb
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.AssemblyInfo.cs
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.dll
+C:\Users\Keyro\C#\OOPwCSharp\DeckOfCards\obj\Debug\netcoreapp2.2\DeckOfCards.pdb

@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\OOPwCSharp\Human\bin\Debug\netcoreapp2.2\Human.deps.json
+C:\Users\Keyro\C#\OOPwCSharp\Human\bin\Debug\netcoreapp2.2\Human.runtimeconfig.json
+C:\Users\Keyro\C#\OOPwCSharp\Human\bin\Debug\netcoreapp2.2\Human.runtimeconfig.dev.json
+C:\Users\Keyro\C#\OOPwCSharp\Human\bin\Debug\netcoreapp2.2\Human.dll
+C:\Users\Keyro\C#\OOPwCSharp\Human\bin\Debug\netcoreapp2.2\Human.pdb
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.AssemblyInfo.cs
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.dll
+C:\Users\Keyro\C#\OOPwCSharp\Human\obj\Debug\netcoreapp2.2\Human.pdb
