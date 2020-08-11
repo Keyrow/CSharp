@@ -1,0 +1,43 @@
+@using Chefs_N_Dishes.Models
+@model DishViewModel
+
+<h1 style="text-align: center; padding-top: 25px;">Add a Dish!</h1>
+<p><a href="/">Home</a></p>
+
+<div class="container">
+    <form asp-action="AddDish_Function" asp-controller="Home" method="POST">
+        <div class="row">
+            <div class="form-group col-md-3">
+                <label asp-validation-for="dish.Food_Name">Name of Dish</label>
+                <span class="text-danger" asp-validation-for="dish.Food_Name"></span>
+                <input asp-for="dish.Food_Name" type="text" class="form-control">
+                <label asp-validation-for="dish.Calories"># of Calories</label>
+                <span class="text-danger" asp-validation-for="dish.Calories"></span>
+                <input asp-for="dish.Calories" type="text" class="form-control">
+                <span class="text-danger" asp-validation-for="dish.Description"></span>
+                <label asp-validation-for="dish.Description" type="text">Description</label>
+                <textarea class="text-danger" asp-for="dish.Description" cols="33" rows="10"></textarea>
+            </div>
+            <div class="form-group col-md-3">
+                <label asp-for="dish.Chef_ID">Chef</label>
+                <select asp-for="dish.Chef_ID" class="form-control">
+                    @foreach (var d in Model.allChefs)
+                    {
+                    <option value="@d.Chef_ID">@d.Chef_FirstName @d.Chef_LastName</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label asp-for="dish.Tastiness">Tastiness</label>    
+                <select asp-for="dish.Tastiness" class="form-control">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Add Dish">
+    </form>
+</div>

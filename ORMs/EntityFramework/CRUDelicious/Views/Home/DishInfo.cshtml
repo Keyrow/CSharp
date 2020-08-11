@@ -1,0 +1,14 @@
+@using CRUDelicious.Models
+@model Dishes
+
+<h1 style="text-align: center;">@ViewBag.DishInfo[0].Name</h1>
+<h2 style="text-align: center;">@ViewBag.DishInfo[0].Chef</h2>
+<hr>
+<div class="container">
+    <h4><a href="/">Home</a></h4>
+    <h4>@ViewBag.DishInfo[0].Description</h4>
+    <h5>Calories: @ViewBag.DishInfo[0].Calories</h5>
+    <h5>Tastiness: @ViewBag.DishInfo[0].Tastiness</h5>
+    <a href="/delete/@ViewBag.dishinfo[0].id"><button class="btn btn-primary">Delete</button></a>
+    <a href="/edit/@ViewBag.dishinfo[0].id"><button class="btn btn-primary">Edit</button></a>
+</div>

@@ -1,0 +1,28 @@
+@using Chefs_N_Dishes.Models
+@model Chefs
+
+<div class="container">
+    <h1 style="text-align: center; padding-top: 25px;">Add Chef Route</h1>
+    <p><a href="/">Home</a></p>
+</div>
+
+<form action="addingchef" method="POST">
+    <div class="form-group col-md-3">
+        <label>First Name</label>
+        <span class="text-danger" asp-validation-for="Chef_FirstName"></span>
+        <input asp-for="Chef_FirstName" type="text" class="form-control">
+    </div>
+    <div class="form-group col-md-3">
+        <label>Last Name</label>
+        <span class="text-danger" asp-validation-for="Chef_LastName"></span>
+        <input asp-for="Chef_LastName" type="text" class="form-control">
+    </div>
+    <div class="form-group col-md-3">
+        <label>Date of Birth</label>
+        <span class="text-danger" asp-validation-for="Chef_Age"></span>
+        <input type="date" asp-for="Chef_Age" class="form-control">
+    </div>
+    <div style="padding-left: 15px;">
+        <input type="submit" value="Add Chef" class="btn btn-primary">
+    </div>
+</form>

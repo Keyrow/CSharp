@@ -1,0 +1,36 @@
+﻿@using Chefs_N_Dishes
+@model List<Chefs>
+
+
+<div class="container">
+    <div style="padding-top: 25px;" class="row">
+        <div class="col"></div>
+        <div class="col text-center"><h1>Chefs | <a href="/dishes">Dishes</a></h1></div>
+        <div class="col text-right"><a href="new">Add a Chef</a></div>
+    </div>
+</div>
+
+<div class="container" style="padding-top: 20px;">
+    <h2 style="padding-bottom: 25px;">Check out our roster of Chefs!</h2>
+    <div style="width: 80%; border: solid; black; 2px" class="table-container">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Age</th>
+                    <th scope="col"># of Dishes</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var i in Model)
+                        {
+                    <tr>
+                        <td>@i.Chef_FirstName @i.Chef_LastName</td>
+                        <td>@Chefs.CalculateAge(i.Chef_Age)</td>
+                        <td>@i.CreatedDishes.Count</td>
+                    </tr>
+                        }
+            </tbody>
+        </table>
+    </div>
+</div>

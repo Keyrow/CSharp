@@ -1,0 +1,57 @@
+{
+  "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\CRUDelicious.csproj",
+  "Configuration": {
+    "ConfigurationName": "MVC-2.1",
+    "LanguageVersion": "2.1",
+    "Extensions": [
+      {
+        "ExtensionName": "MVC-2.1"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": null,
+  "RootNamespace": "CRUDelicious",
+  "Documents": [
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Home\\EditDish.cshtml",
+      "TargetPath": "Views\\Home\\EditDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Home\\DishInfo.cshtml",
+      "TargetPath": "Views\\Home\\DishInfo.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Home\\Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Home\\CreateDish.cshtml",
+      "TargetPath": "Views\\Home\\CreateDish.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\Keyro\\C#\\ORMs\\EntityFramework\\CRUDelicious\\Views\\Shared\\_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    }
+  ],
+  "SerializationFormat": "0.2"
+}
