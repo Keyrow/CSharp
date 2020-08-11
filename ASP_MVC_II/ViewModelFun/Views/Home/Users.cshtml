@@ -1,0 +1,11 @@
+@using ViewModelFun.Models
+@model MyModels
+
+<h1 style="text-align: center;">Here are some users!</h1>
+
+<ul>
+@foreach (string item in @Model.Users)
+{
+    <li>@item</li>
+}
+</ul>

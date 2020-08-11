@@ -1,0 +1,11 @@
+@using ViewModelFun.Models
+@model MyModels
+
+<h1 style="text-align: center;">Here is a list of numbers!</h1>
+<ul>
+
+@foreach (int item in @Model.Numbers)
+{
+    <li>@item</li>
+}
+</ul>
