@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razor</title>
+</head>
+<body>
+    <h1>Here are some dlicious foods!</h1>
+    @{
+    var StringList = new List<string>
+    {
+        "Apple Pie",
+        "Burritos",
+        "Clams Casino",
+        "Donuts"
+    };
+        
+    foreach(var word in StringList)
+    {
+        // We can render HTML from within C# code!
+        <p>@word</p>
+    }
+}
+</body>
+</html>
+
+@* <div contenteditable>
+    ST<span style="color: red">A</span>CK OVERFLOW
+</div> *@

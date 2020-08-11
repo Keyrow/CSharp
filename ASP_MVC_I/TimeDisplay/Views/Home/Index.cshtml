@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeDisplay</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <h1 style="text-align: center;">The Current time and date:</h1>
+    @{ DateTime CurrentTime = DateTime.Now; }
+    <div style="display: inline-block; margin: 0 auto; padding-top: 10%; text-align: center;">    
+        <div style="width: 400px; border-style: solid; black; width; 2px;">
+            <p>Date: @CurrentTime.ToString("MMM d, yyy") </p>
+            <p>Time: @CurrentTime.ToString("h:mm:ss tt") </p>
+        </div>
+    </div>
+@* Javascript to have the page reload every second to constantly update time *@
+<script>
+(function() {
+setInterval(()=>{
+window.location.reload()
+}, 1000
+)
+})();
+</script>
+</body>
+</html>
