@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css" />
+    <title>Hobby Hub</title>
+    @using BeltExam.Models
+    @model DashboardModel
+    @using System.Linq
+</head>
+<body>
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <h3 style="color: white;">Hobbies</h3>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class='nav-link' href="/logout">Logout</a>
+            </li>
+        </ul>
+    </nav><br>
+    <a style="float: right;" class="btn btn-primary" href="/NewHobby">Create a Hobby</a>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <td>Name</td>
+                <td>Enthusiast</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var hobby in ViewBag.Hobbies) {
+            <tr>
+                <td><a href="Hobby/@hobby.Id">@hobby.Name</a></td>
+                <td>
+                    @hobby.Enthusiasts.Count
+                </td>
+            </tr>
+                } 
+        </tbody>
+    </table>
+</body>
+</html>
