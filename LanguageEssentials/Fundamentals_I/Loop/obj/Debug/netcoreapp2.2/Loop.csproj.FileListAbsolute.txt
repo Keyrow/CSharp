@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\bin\Debug\netcoreapp2.2\Loop.deps.json
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\bin\Debug\netcoreapp2.2\Loop.runtimeconfig.json
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\bin\Debug\netcoreapp2.2\Loop.runtimeconfig.dev.json
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\bin\Debug\netcoreapp2.2\Loop.dll
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\bin\Debug\netcoreapp2.2\Loop.pdb
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.AssemblyInfo.cs
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.dll
+C:\Users\Keyro\C#\LanguageEssentials\Fundamentals_I\Loop\obj\Debug\netcoreapp2.2\Loop.pdb

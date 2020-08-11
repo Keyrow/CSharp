@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\bin\Debug\netcoreapp2.2\CollectionsPractice.deps.json
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\bin\Debug\netcoreapp2.2\CollectionsPractice.runtimeconfig.json
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\bin\Debug\netcoreapp2.2\CollectionsPractice.runtimeconfig.dev.json
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\bin\Debug\netcoreapp2.2\CollectionsPractice.dll
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\bin\Debug\netcoreapp2.2\CollectionsPractice.pdb
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.AssemblyInfo.cs
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.dll
+C:\Users\Keyro\C#\LanguageEssentials\Collections_Practice\CollectionsPractice\obj\Debug\netcoreapp2.2\CollectionsPractice.pdb

@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.AssemblyInfo.cs
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\bin\Debug\netcoreapp2.2\Basics.deps.json
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\bin\Debug\netcoreapp2.2\Basics.runtimeconfig.json
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\bin\Debug\netcoreapp2.2\Basics.runtimeconfig.dev.json
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\bin\Debug\netcoreapp2.2\Basics.dll
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\bin\Debug\netcoreapp2.2\Basics.pdb
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.dll
+C:\Users\Keyro\C#\LanguageEssentials\Basic13\Basics\obj\Debug\netcoreapp2.2\Basics.pdb

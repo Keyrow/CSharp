@@ -1,0 +1,11 @@
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\bin\Debug\netcoreapp2.2\Puzzles_III.deps.json
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\bin\Debug\netcoreapp2.2\Puzzles_III.runtimeconfig.json
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\bin\Debug\netcoreapp2.2\Puzzles_III.runtimeconfig.dev.json
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\bin\Debug\netcoreapp2.2\Puzzles_III.dll
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\bin\Debug\netcoreapp2.2\Puzzles_III.pdb
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.csprojAssemblyReference.cache
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.csproj.CoreCompileInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.AssemblyInfoInputs.cache
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.AssemblyInfo.cs
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.dll
+C:\Users\Keyro\C#\LanguageEssentials\Puzzles\Puzzles_III\obj\Debug\netcoreapp2.2\Puzzles_III.pdb
