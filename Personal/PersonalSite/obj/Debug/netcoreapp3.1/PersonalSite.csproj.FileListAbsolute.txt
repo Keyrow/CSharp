@@ -43,8 +43,6 @@ C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netc
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\PersonalSite.TagHelpers.output.cache
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\PersonalSite.RazorCoreGenerate.cache
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Dashboard.cshtml.g.cs
-C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Hobby.cshtml.g.cs
-C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\NewHobby.cshtml.g.cs
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\User\Partials\Login.cshtml.g.cs
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\User\Partials\Register.cshtml.g.cs
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\PersonalSite.RazorTargetAssemblyInfo.cache
@@ -57,3 +55,15 @@ C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netc
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\PersonalSite.pdb
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\PersonalSite.genruntimeconfig.cache
 C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\Google.Protobuf.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\MySql.Data.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\AboutMe.cshtml.g.cs
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Home\Resume.cshtml.g.cs
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\MailKit.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\bin\Debug\netcoreapp3.1\MimeKit.dll
+C:\Users\SongKim2\Desktop\CodingDojo\CSharp\Personal\PersonalSite\obj\Debug\netcoreapp3.1\Razor\Views\Contact\ContactMe.cshtml.g.cs

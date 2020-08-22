@@ -2,6 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using MimeKit;
+using MimeKit.Text;
+using MailKit;
 
 namespace PersonalSite.Models
 {
@@ -13,6 +17,8 @@ namespace PersonalSite.Models
             return date > DateTime.Now;
         }
     }
+
+    // Login with validations
     public class LoginUser
     {
         public string LogEmail { get; set; }
@@ -21,6 +27,7 @@ namespace PersonalSite.Models
         public string LogPassword { get; set; }
     }
 
+    // Registration with validations
     public class RegisterUser
     {
         [Key]
@@ -55,23 +62,83 @@ namespace PersonalSite.Models
         public DateTime Created_At { get; set; }
         public DateTime Updated_At { get; set; }
     }
+
+    // Dashboard aka Home Page
     public class DashboardModel
     {
         public User Users { get; set; }
-        public Hobby Hobbies { get; set; }
-        public List<Enthusiast> AllEnthusiasts { get; set; }
     }
-    public class NewHobby
+
+    // Email Address
+    public class EmailAddress
     {
-        [Key]
-        public int Id { get; set; }
-
-        [Required(ErrorMessage = "Name is required.")]
-        [MinLength(2, ErrorMessage = "Name must be at least 2 characters.")]
         public string Name { get; set; }
-
-        [Required(ErrorMessage = "Description is required.")]
-        [MinLength(2, ErrorMessage = "Description must be at least 2 characters.")]
-        public string Description { get; set; }
+        public string Address { get; set; }
     }
+
+    // Email Message
+    public class EmailMessage
+    {
+        public List<EmailAddress> ToAddresses { get; set; } = new List<EmailAddress>();
+        public List<EmailAddress> FromAddresses { get; set; } = new List<EmailAddress>();
+        public string Subject { get; set; }
+        public string Content { get; set; }
+    }
+
+    // SmtpServer Configuration
+    public class EmailServerConfiguration
+    {
+        public EmailServerConfiguration(int _smtpPort = 587)
+        {
+            SmtpPort = _smtpPort;
+        }
+
+        public string SmtpServer { get; set; }
+        public int SmtpPort { get; }
+        public string SmtpUsername { get; set; }
+        public string SmtpPassword { get; set; }
+    }
+
+    // Dependency Injection Feature
+    public interface IEmailService
+    {
+        void Send(EmailMessage message);
+    }
+
+    public class MailKitEmailService : IEmailService
+    {
+        private readonly EmailServerConfiguration _eConfig;
+
+        public MailKitEmailService(EmailServerConfiguration config)
+        {
+            _eConfig = config;
+        }
+
+        public void Send(EmailMessage msg)
+        {
+            var message = new MimeMessage();
+            message.To.AddRange(msg.ToAddresses.Select(x => new MailboxAddress(x.Name, x.Address)));
+            message.From.AddRange(msg.FromAddresses.Select(x => new MailboxAddress(x.Name, x.Address)));
+
+            message.Subject = msg.Subject;
+
+            message.Body = new TextPart("plain")
+            {
+                Text = msg.Content
+            };
+
+            using (var client = new MailKit.Net.Smtp.SmtpClient())
+            {
+                client.Connect(_eConfig.SmtpServer, _eConfig.SmtpPort);
+
+                client.AuthenticationMechanisms.Remove("XOAUTH2");
+
+                client.Authenticate(_eConfig.SmtpUsername, _eConfig.SmtpPassword);
+
+                client.Send(message);
+                client.Disconnect(true);
+            }
+        }
+    }
+
 }

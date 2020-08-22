@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 
-
 namespace PersonalSite.Controllers
 {
     public class HomeController : Controller
@@ -34,96 +33,35 @@ namespace PersonalSite.Controllers
             DashboardModel view = new DashboardModel()
             {
                 Users = new User(),
-                Hobbies = new Hobby(),
             };
             int? user_id = HttpContext.Session.GetInt32("id");
             User curruser = _context.Users.Where(u => u.Id == user_id).SingleOrDefault();
-            List<Hobby> allHobbies = _context.Hobbies.Include(w => w.Enthusiasts).ToList();                  
-            // store lists and user in viewbag to display on page
-            ViewBag.UserId = user_id;
-            ViewBag.User = curruser;
-            ViewBag.Hobbies = allHobbies;
+
             return View(view);
         }
+
+        // Get Route for About Me from Dashboard Navbar
         [HttpGet]
-        [Route("NewHobby")]
-        public IActionResult NewHobby()
+        [Route("AboutMe")]
+        public IActionResult AboutMe()
         {
             if (HttpContext.Session.GetInt32("id") == null)
             {
                 return RedirectToAction("Index", "User");
             }
-            return View();
-        }
-        [HttpGet]
-        [Route("Hobby/{HobbyId}")]
-        public IActionResult Hobby(int HobbyId)
-        {
-            if (HttpContext.Session.GetInt32("id") == null)
-            {
-                return RedirectToAction("Index", "User");
-            }
-            // include guests lists and then inclide invited user within the guests list
-            Hobby hobby = _context.Hobbies
-                            .Include(w => w.Enthusiasts)
-                            .ThenInclude(g => g.JoinedUser)
-                            .SingleOrDefault(w => w.Id == HobbyId);
-            // // store current wedding and all the guests in viewbag to display on page
-            ViewBag.CurrentHobby = hobby;
-            ViewBag.Description = hobby.Description;
-            ViewBag.HobbyEnthusiasts = hobby.Enthusiasts;
             return View();
         }
 
-        [HttpPost]
-        [Route("addhobby/{HobbyId}")]
-        public IActionResult AddToHobbies(int HobbyId)
+        // Get Route for My Resume from Dashboard Navbar
+        [HttpGet]
+        [Route("Resume")]
+        public IActionResult Resume()
         {
             if (HttpContext.Session.GetInt32("id") == null)
             {
                 return RedirectToAction("Index", "User");
             }
-            int? user_id = HttpContext.Session.GetInt32("id");
-            User curruser = _context.Users.Where(u => u.Id == user_id).SingleOrDefault();
-            Hobby hobby = _context.Hobbies
-                            .Include(w => w.Enthusiasts)
-                            .ThenInclude(g => g.JoinedUser)
-                            .SingleOrDefault(h => h.Id == HobbyId);
-            Join newJoin = new Join
-            {
-                UserId = curruser.Id,
-                JoinedUser = curruser,
-                HobbyId = hobby.Id,
-                Hobby = hobby
-            };
-            hobby.Enthusiasts.Add(newJoin);
-            _context.SaveChanges();
-            return RedirectToAction("Dashboard");
-        }
-        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ POST ROUTES ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-        [HttpPost]
-        [Route("CreateHobby")]
-        public IActionResult CreateHobby(NewHobby hobby)
-        {
-            if (HttpContext.Session.GetInt32("id") == null)
-            {
-                return RedirectToAction("Index", "User");
-            }
-            int? user_id = HttpContext.Session.GetInt32("id");
-            if (ModelState.IsValid)
-            {
-                Hobby NewHobby = new Hobby
-                {
-                    Name = hobby.Name,
-                    Description = hobby.Description,
-                    Created_At = DateTime.Now,
-                    Updated_At = DateTime.Now,
-                };
-                _context.Add(NewHobby);
-                _context.SaveChanges();
-                return RedirectToAction("Dashboard", "Home");
-            }
-            return View("NewHobby");
+            return View();
         }
     }
 }

@@ -27,6 +27,21 @@ namespace PersonalSite
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            EmailServerConfiguration config = new EmailServerConfiguration
+            {
+                SmtpPassword = "Password",
+                SmtpServer = "smtp.someserver.com",
+                SmtpUsername = "songminkim.dev@gmail.com"
+            };
+
+            EmailAddress FromEmailAddress = new EmailAddress
+            {
+                Address = "myemailaddress@somesite.com",
+                Name = "Song Kim"
+            };
+            services.AddSingleton<EmailServerConfiguration>(config);
+            services.AddTransient<IEmailService, MailKitEmailService>();
+            services.AddSingleton<EmailAddress>(FromEmailAddress);
             services.AddDbContext<MyContext>(options => options.UseMySql(Configuration["DBInfo:ConnectionString"]));
             services.AddMvc(options => options.EnableEndpointRouting = false);
             services.AddSession();
@@ -40,9 +55,9 @@ namespace PersonalSite
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseMvc();
             app.UseStaticFiles();
             app.UseSession();
+            app.UseMvc();
         }
     }
 }

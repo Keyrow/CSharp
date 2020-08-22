@@ -17,50 +17,6 @@ namespace PersonalSite.Migrations
                 .HasAnnotation("ProductVersion", "3.1.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
-            modelBuilder.Entity("PersonalSite.Models.Hobby", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("Created_At")
-                        .HasColumnType("datetime(6)");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<string>("Name")
-                        .HasColumnType("longtext CHARACTER SET utf8mb4");
-
-                    b.Property<DateTime>("Updated_At")
-                        .HasColumnType("datetime(6)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Hobbies");
-                });
-
-            modelBuilder.Entity("PersonalSite.Models.Join", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    b.Property<int>("HobbyId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("HobbyId");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Enthusiasts");
-                });
-
             modelBuilder.Entity("PersonalSite.Models.User", b =>
                 {
                     b.Property<int>("Id")
@@ -88,21 +44,6 @@ namespace PersonalSite.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
-                });
-
-            modelBuilder.Entity("PersonalSite.Models.Join", b =>
-                {
-                    b.HasOne("PersonalSite.Models.Hobby", "Hobby")
-                        .WithMany("Enthusiasts")
-                        .HasForeignKey("HobbyId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("PersonalSite.Models.User", "JoinedUser")
-                        .WithMany()
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

@@ -6,38 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="~/css/style.css" />
-    <title>Hobby Hub</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <title>Song Kim's Portfolio</title>
     @using PersonalSite.Models
     @model DashboardModel
     @using System.Linq
 </head>
 <body>
-    <nav class="navbar sticky-top navbar-dark bg-dark">
-        <h3 style="color: white;">Hobbies</h3>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class='nav-link' href="/logout">Logout</a>
-            </li>
-        </ul>
-    </nav><br>
-    <a style="float: right;" class="btn btn-primary" href="/NewHobby">Create a Hobby</a>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <td>Name</td>
-                <td>Enthusiast</td>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var hobby in ViewBag.Hobbies) {
-            <tr>
-                <td><a href="Hobby/@hobby.Id">@hobby.Name</a></td>
-                <td>
-                    @hobby.Enthusiasts.Count
-                </td>
-            </tr>
-                } 
-        </tbody>
-    </table>
+    <section class="dashboard">
+        <header>
+            <div class="container">
+                <div class="row">
+                        <nav class="homeNav">
+                            <ul>
+                                <li><a class="navlink" href="/aboutMe">About Me</a></li>
+                                <li><a class="navlink" href="/resume">Resume</a></li>
+                                <li><a class="navlink" href="/ContactMe">Contact Me</a></li>
+                                <li><a class="navlink" href="/logout">Logout</a></li>
+                            </ul>
+                        </nav>
+                </div>
+            </div>
+        </header>
+    <div class="container">
+        <div class="row main">
+            <div class="col-12">
+                <img class="selfie" src="~/images/portrait.png" alt="selfie">
+                <p class="d-para">
+                    Song Min Kim, Full Stack Developer: Python w/ Django, C# w/ ASP.Net, React w/ MongoDB
+                </p>
+            </div>
+        </div>
+        <div class="footer row text-center">
+            <div class="col-lg-4  col-md-4 col-sm-12">
+                <a href="https://github.com/Keyrow" target="_blank" rel="noopener noreferrer"><img src="~/images/github.png" alt="github"></a>
+            </div>                    
+            <div class="col-lg-4  col-md-4 col-sm-12">
+                <a href="https://www.linkedin.com/in/song-kim-31161b4a/" target="_blank" rel="noopener noreferrer"><img src="~/images/linkedin.png" alt="linkedin"></a>
+            </div>
+            <div class="col-lg-4  col-md-4 col-sm-12">
+                <a href="https://www.facebook.com/song.kim.397" target="_blank" rel="noopener noreferrer"><img src="~/images/facebook.png" alt="facebook"></a>
+            </div>
+        </div>
+    </div>
+    </section>
 </body>
 </html>
