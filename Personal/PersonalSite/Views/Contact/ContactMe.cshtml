@@ -13,6 +13,7 @@
     <title>Contact Me</title>
 </head>
 <body>
+<section class="contactme">
     <header>
         <div class="container">
             <div class="row">
@@ -27,21 +28,32 @@
             </div>
         </div>
     </header>
-    <h3>Basic Contact Form</h3>
-<form asp-action="Index" asp-controller="Home" method="post">
-    <div>
-        <label asp-for="Name">Please enter your name:</label>
-        <input type="text" asp-for="Name" />
+<h3 class="header-title">Contact Me</h3>
+<form asp-action="FormHandler" asp-controller="Contact" method="post">
+    <div class="name-block form-group row">
+        <label asp-for="Name" class="labels col-sm-1 col-form-label">Name</label>
+        <div class="col-sm-3">
+            <input asp-for="Name" type="text" class="form-control"  placeholder="Please Enter Your Full Name">
+        </div>
     </div>
-    <div>
-        <label asp-for="Email">Please enter your email:</label>
-        <input type="text" asp-for="Email" />
+
+    <div class="email-block form-group row">
+        <label asp-for="Email" class="labels col-sm-1 col-form-label">Email</label>
+        <div class="col-sm-3">
+            <input asp-for="Email" type="text" class="form-control" placeholder="Please Enter Your Email">
+        </div>
     </div>
-    <div>
-        <label asp-for="Message">Please enter your message:</label>
-        <textarea asp-for="Message"></textarea>
+
+    <div class="message-block form-group row">
+        <label asp-for="Message" class="labels col-sm-1 col-form-label">Message</label>
+        <div class="col-sm-3">
+            <textarea asp-for="Message" type="text" class="contact-message form-control" placeholder="Your Message here!"></textarea>
+        </div>
     </div>
-    <input type="submit" value="Send Message!" />
+    <div class="button-block">
+        <button class="button btn btn-success col-sm-1">Send</button>
+    </div>
 </form>
+</section>
 </body>
 </html>

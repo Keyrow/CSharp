@@ -17,7 +17,6 @@ namespace PersonalSite
 {
     public class Startup
     {
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,8 +28,8 @@ namespace PersonalSite
         {
             EmailServerConfiguration config = new EmailServerConfiguration
             {
-                SmtpPassword = "Password",
-                SmtpServer = "smtp.someserver.com",
+                SmtpPassword = "tkfkd1God223",
+                SmtpServer = "smtp.gmail.com",
                 SmtpUsername = "songminkim.dev@gmail.com"
             };
 

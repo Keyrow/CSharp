@@ -14,8 +14,8 @@ namespace PersonalSite.Controllers
 {
     public class ContactController : Controller
     {
-        private EmailAddress FromAndToEmailAddress;
-        private IEmailService EmailService;
+        private  readonly EmailAddress FromAndToEmailAddress;
+        private readonly IEmailService EmailService;
         public ContactController(EmailAddress _fromAddress,
             IEmailService _emailService)
         {
@@ -34,7 +34,8 @@ namespace PersonalSite.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(ContactFormModel model)
+        [Route("ContactMe")]
+        public IActionResult FormHandler(ContactFormModel model)
         {
             if (ModelState.IsValid)
             {
@@ -48,11 +49,11 @@ namespace PersonalSite.Controllers
                 };
 
                 EmailService.Send(msgToSend);
-                return RedirectToAction("/");
+                return RedirectToAction("ContactMe");
             }
             else
             {
-                return RedirectToAction("/");
+                return RedirectToAction("ContactMe");
             }
         }
     }

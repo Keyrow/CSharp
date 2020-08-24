@@ -4,7 +4,6 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 
-
 namespace PersonalSite.Models
 {
     public class User
@@ -29,6 +28,5 @@ namespace PersonalSite.Models
         public string Email { get; set; }
         public string Name { get; set; }
         public string Message { get; set; }
-
     }
 }

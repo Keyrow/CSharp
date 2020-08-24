@@ -1,16 +1,3 @@
-.dashboard {
-    background: url("https://wallpaperaccess.com/full/516010.jpg"), no-repeat;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-}
-
-/* .container {
-    display: flex;
-    justify-content: space-between;
-} */
 
 header {
     background: black;
@@ -67,9 +54,18 @@ a.navlink:hover::before {
 }
 
 /* DASHBOARD SECTION */
+.dashboard {
+    background: url("https://wallpaperaccess.com/full/516010.jpg"), no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
 .d-para {
     color: white;
-    font-size: 16px;
+    font-size: 20px;
     position: fixed;
     right: 100px;
     width: 600px;
@@ -80,27 +76,152 @@ a.navlink:hover::before {
 }
 
 .footer {
-    position: fixed; bottom:0;left:0;right:0;height:100px;
+    position: fixed; 
+    bottom:50px;
+    left:1350px;
+    right:-1000px;
+    height:100px;
+}
+
+/* Social Media Logo Link effects */
+
+.grow-effect{
+    transition: .3s ease;
+}
+
+.grow-effect:hover{
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -ms-transform: scale(1.5);
 }
 
 .selfie {
     position: fixed;
     top: 74px;
     right: 280px;
-
+    
 }
 
 /* ABOUT ME SECTION */
+.aboutme {
+    background: url("https://wallpaperaccess.com/full/2454628.png"), no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
 .about-me h1 {
-    color: purple;
-    font-size: 180px;
+    text-align: center;
+    color: white;
+    position: relative;
+    right: 350px;
+    font-family: 'Roboto', serif;
 }
 
 .about-me p {
-    color: red;
-    font-size: 70px;
-    background-color: yellow;
-    border-radius: 12%;
-    height: 500px;
+    text-align: center;
+    color: white;
+    position: relative;
+    right: 350px;
+    font-family: 'Roboto', serif;
 }
 
+.about-me-logos {
+    position: relative;
+    right: 360px;
+    bottom: 12px;
+}
+
+.logo1{
+    padding: 20px;
+}
+.logo2{
+    padding: 20px;
+}
+.logo3{
+    padding: 20px;
+}
+.logo4{
+    padding: 20px;
+}
+.logo5{
+    padding: 20px;
+}
+.logo6{
+    padding: 20px;
+}
+.logo7{
+    padding: 20px;
+}
+.logo8{
+    padding: 20px;
+}
+.logo9{
+    padding: 20px;
+}
+.logo10{
+    padding: 20px;
+}
+
+/* CONTACT ME SECTION */
+
+.contactme {
+    background: url("https://shared.ontariotechu.ca/shared/department/itsc/All%20Images/nologo_1440x2560---ontariotech_desktop_.jpg"), no-repeat;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.header-title {
+    font-family: 'Roboto', serif;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: white;
+    text-shadow: 4px 4px 4px black;
+}
+
+.labels {
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.contact-message {
+    height: 300px;
+    resize: none;
+}
+
+.name-block {
+    font-family: 'Roboto', serif;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.email-block {
+    font-family: 'Roboto', serif;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.message-block {
+    font-family: 'Roboto', serif;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.button-block {
+    text-align: center;
+    position: relative;
+    left: 50px;
+}
+
+.button {
+    
+}
